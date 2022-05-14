@@ -12,7 +12,7 @@ function Game() {
     };
 
     const bestScoreValue = () => {
-        setBestScore(score);
+        setBestScore((prevScore) => prevScore + 1);
     };
 
     const cardPosition = (cardValue) => {
@@ -28,8 +28,9 @@ function Game() {
         if (!cards.includes(cardValue)) {
             cardPosition(cardValue);
             addScore();
+            const newScore = score + 1;
+            if (newScore > bestScore) bestScoreValue(newScore);
         } else {
-            bestScoreValue();
             resetGame();
         }
     };
