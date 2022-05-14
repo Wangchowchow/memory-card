@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
 
-import alaskanMalamute from "../assets/alaskanmalamute";
-import bulldog from "../assets/bulldog";
-import germanSheperd from "../assets/germansheperd";
-import goldenRetreiver from "../assets/goldenretreiver";
-import labradorRetreiver from "../assets/labradorretreiver";
-import pomeranian from "../assets/pomeranian";
-import pug from "../assets/pug";
-import shibaInu from "../assets/shibainu";
-import shihTzu from "../assets/shihtzu";
-import siberianHusky from "../assets/siberianhusky";
+import alaskanMalamute from "../assets/alaskanmalamute.jpg";
+import bulldog from "../assets/bulldog.jpg";
+import germanSheperd from "../assets/germansheperd.jpg";
+import goldenRetreiver from "../assets/goldenretreiver.jpg";
+import labradorRetreiver from "../assets/labradorretreiver.jpg";
+import pomeranian from "../assets/pomeranian.jpeg";
+import pug from "../assets/pug.jpg";
+import shibaInu from "../assets/shibainu.jpg";
+import shihTzu from "../assets/shihtzu.jpg";
+import siberianHusky from "../assets/siberianhusky.jpeg";
 
 function CardContainer(props) {
     const { handleGame, score, bestScore } = props;
