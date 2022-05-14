@@ -13,7 +13,7 @@ import shihTzu from "../assets/shihtzu";
 import siberianHusky from "../assets/siberianhusky";
 
 function CardContainer(props) {
-    const { handleGame, score, highScore } = props;
+    const { handleGame, score, bestScore } = props;
 
     let cards = [
         {
@@ -58,5 +58,28 @@ function CardContainer(props) {
         }
     ];
 
-    const []
+    const [ arrangement, newArrangement ] = useState(cards);
+
+    const shuffle = (cards) => {
+        for (let i = cards.length - 1; i > 0; i--){
+            let randomIndex = Math.floor(Math.random() * i);
+            [cards[randomIndex], cards[i]] = [cards[i], cards[randomIndex]];
+        }
+    };
+
+    useEffect(() => {
+        const position = [...arrangement];
+        shuffle(position);
+        newArrangement(position);
+    }, [ score, bestScore ]);
+
+    return(
+        <div>
+            {arrangement.map((item) => (
+                <Card card={item} key={item.value} handleGame={handleGame}></Card>
+            ))}
+        </div>
+    );
 }
+
+export default CardContainer;
