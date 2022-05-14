@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.912b0f97.css",
+    "main.js": "/memory-card/static/js/main.ce96a0ee.js",
+    "static/media/labradorretreiver.jpg": "/memory-card/static/media/labradorretreiver.be2407ba169551e442a0.jpg",
+    "static/media/shibainu.jpg": "/memory-card/static/media/shibainu.5b3d5608ef8db07b10a4.jpg",
+    "static/media/siberianhusky.jpeg": "/memory-card/static/media/siberianhusky.56ead4f8f9f50ce48940.jpeg",
+    "static/media/Pacifico-Regular.ttf": "/memory-card/static/media/Pacifico-Regular.c0d735fc04154e03a691.ttf",
+    "static/media/bulldog.jpg": "/memory-card/static/media/bulldog.8d07c00efd6e1c0d3f84.jpg",
+    "static/media/pug.jpg": "/memory-card/static/media/pug.3b2d61751ae7589bca64.jpg",
+    "static/media/goldenretreiver.jpg": "/memory-card/static/media/goldenretreiver.65e24fc75f29a5223707.jpg",
+    "static/media/germansheperd.jpg": "/memory-card/static/media/germansheperd.aa4100f93f562ca094e2.jpg",
+    "static/media/pomeranian.jpeg": "/memory-card/static/media/pomeranian.eb4be8ebf693ace653bd.jpeg",
+    "static/media/alaskanmalamute.jpg": "/memory-card/static/media/alaskanmalamute.fcaccf4559784b289abe.jpg",
+    "static/media/shihtzu.jpg": "/memory-card/static/media/shihtzu.54a5365bceb99b5a3085.jpg",
+    "index.html": "/memory-card/index.html",
+    "main.912b0f97.css.map": "/memory-card/static/css/main.912b0f97.css.map",
+    "main.ce96a0ee.js.map": "/memory-card/static/js/main.ce96a0ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.912b0f97.css",
+    "static/js/main.ce96a0ee.js"
+  ]
+}
