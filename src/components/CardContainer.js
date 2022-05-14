@@ -74,7 +74,7 @@ function CardContainer(props) {
     }, [ score, bestScore ]);
 
     return(
-        <div>
+        <div className="card-container">
             {arrangement.map((item) => (
                 <Card card={item} key={item.value} handleGame={handleGame}></Card>
             ))}
