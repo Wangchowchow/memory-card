@@ -7,7 +7,7 @@ function Card(props) {
     } = props;
 
     return (
-        <button className="card" onClick={handleGame}>
+        <button className="card" onClick={handleGame.bind(this, value)}>
             <img src={src} alt={value}></img>
             <p>{value}</p>
         </button>
