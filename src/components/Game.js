@@ -8,15 +8,15 @@ function Game() {
     const [cards, setCards] = useState([]);
 
     const addScore = () => {
-        setScore((prevScore) => prevScore + 1);
+        setScore(score + 1);
     };
 
-    const bestScoreValue = () => {
-        setBestScore((prevScore) => prevScore + 1);
+    const addBestScore = () => {
+        setBestScore(score + 1);
     };
 
-    const cardPosition = (cardValue) => {
-        setCards((prevPosition) => [...prevPosition, cardValue]);
+    const addCard = (newCard) => {
+        setCards((card) => [...card, newCard]);
     };
 
     const resetGame = () => {
@@ -24,12 +24,12 @@ function Game() {
         setCards([]);
     };
 
-    const handleGame = (cardValue) => {
-        if (!cards.includes(cardValue)) {
-            cardPosition(cardValue);
+    const handleGame = (newCard) => {
+        if (!cards.includes(newCard)) {
+            addCard(newCard);
             addScore();
             const newScore = score + 1;
-            if (newScore > bestScore) bestScoreValue(newScore);
+            if (newScore > bestScore) addBestScore();
         } else {
             resetGame();
         }

@@ -58,7 +58,7 @@ function CardContainer(props) {
         }
     ];
 
-    const [ arrangement, newArrangement ] = useState(cards);
+    const [ arrangement, setArrangement ] = useState(cards);
 
     const shuffle = (cards) => {
         for (let i = cards.length - 1; i > 0; i--){
@@ -70,7 +70,7 @@ function CardContainer(props) {
     useEffect(() => {
         const position = [...arrangement];
         shuffle(position);
-        newArrangement(position);
+        setArrangement(position);
     }, [ score, bestScore ]);
 
     return(
